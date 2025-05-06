@@ -13,7 +13,7 @@ def call( String imageName) {
     // Replace 'my-docker-image' with your desired image name   
 }
 
-
+//imageName = 'rameshm1/demo-java-app:1.2.0'
 //builImage 'rameshm1/demo-java-app:1.2.0'
 
 //filenameofgroovy.functioname
