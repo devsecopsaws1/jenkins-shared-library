@@ -7,8 +7,8 @@ def call( String imageName) {
         usernamePassword(credentialsId: 'dockerhub-cred', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')
     ]) {
         sh "docker build -t $imageName ."
-        sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin"
-        sh "docker push $imageName "
+        //sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin"
+        //sh "docker push $imageName "
     }
     // Replace 'my-docker-image' with your desired image name   
 }
