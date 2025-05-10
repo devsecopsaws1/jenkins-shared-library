@@ -1,4 +1,7 @@
+import com.example.Docker
+
 def call(String imageName) {
-    echo "Push into Dockerhub..."
-    sh "docker push $imageName"
+
+    return new Docker(this).pushImage(imageName)
+
 }
